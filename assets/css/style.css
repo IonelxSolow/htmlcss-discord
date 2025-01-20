@@ -1,4 +1,5 @@
 :root {
+    --bg-nav-header-col: #3161e0;
     --bg-white-color: white;
     --bg-light-grey: #d3d3d3;
     --bg-light-blue: #1d90ff;
@@ -11,17 +12,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
-  
+  .text_color_white{
+    color: white;
+  }
   .debug {
     background-color: antiquewhite;
+    border: 1px dotted;
   }
   
-  .container {
-    margin: 0 auto;
-    max-width: 1200px;
-    min-width: 600px;
+  .d-flex{
     display: flex;
+  }
+
+  .container {
+    margin: auto;
+    max-width: 80%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -29,8 +36,7 @@
   }
   /* ------HEADER------ */
   #navbar {
-    display: flex;
-    background-color: #add8e6;
+    background-color: var(--bg-nav-header-col);
     flex-wrap: nowrap;
     padding: 1.5rem 20rem;
   }
@@ -38,22 +44,39 @@
     display: flex;
     list-style-type: none;
     a {
+        color: white;
       padding: 10px 5px;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
-      background-color: brown;
+  /*     background-color: brown; */
     }
   }
   .logo,
   .nav_links,
   .login_button {
     display: flex;
-    border: 1px dotted black;
+   /*  border: 1px dotted black; */
     padding: 10px 5px;
   }
-  
+ /*  .bottone_accedi{
+    border: none;
+    padding: 5px;
+    border-radius: 20px; 
+  }*/
+  button{
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .button_open_discor_brows{
+    background-color: var(--dark-not-black);
+  }
+  .down_open_disc{
+    justify-content: space-evenly;
+
+  }
   .logo {
     order: 1;
     flex-grow: 1;
@@ -71,19 +94,23 @@
   /* --END----HEADER------ */
   /* ----JUMBOTRON------ */
   #jumbotron {
+    background-image: url('./assets/img/jumbo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-  
-    background-color: #00008b;
+    background-color: var(--bg-nav-header-col);
     height: 240px;
+    
   }
   .jumbotron_box {
     width: 50%;
     align-content: center;
     text-align: center;
-    border: 1px dotted black;
+  /*   border: 1px dotted black; */
     padding: 10px;
-    height: 190px;
-    background-color: #ee81ee;
+ /*    height: 190px; */
+  /*   background-color: #ee81ee; */
   }
   /* --END----JUMBOTRON------ */
   /* ----INVITE_ONLY----*/
@@ -98,7 +125,7 @@
     width: 50%;
     align-content: center;
     text-align: center;
-    border: 1px dotted black;
+  /*   border: 1px dotted black; */
     order: 1;
     flex-grow: 2;
     background-color: var(--bg-light-blue);
@@ -108,7 +135,7 @@
     width: 30%;
     align-content: center;
     text-align: center;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     order: 2;
     flex-grow: 1;
     background-color: var(--bg-light-pink);
@@ -127,7 +154,7 @@
     width: 50%;
     align-content: center;
     text-align: center;
-    border: 1px dotted black;
+ /*    border: 1px dotted black; */
     order: 2;
     flex-grow: 2;
     background-color: var(--bg-light-blue);
@@ -137,7 +164,7 @@
     width: 30%;
     align-content: center;
     text-align: center;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     order: 1;
     flex-grow: 1;
     background-color: var(--bg-light-pink);
@@ -156,7 +183,7 @@
     width: 50%;
     align-content: center;
     text-align: center;
-    border: 1px dotted black;
+   /*  border: 1px dotted black; */
     order: 1;
     flex-grow: 2;
     background-color: var(--bg-light-blue);
@@ -166,7 +193,7 @@
     width: 30%;
     align-content: center;
     text-align: center;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     order: 2;
     flex-grow: 1;
     background-color: var(--bg-light-pink);
@@ -183,7 +210,7 @@
     width: 50%;
     align-content: center;
     text-align: center;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     padding: 10px;
     height: 425px;
     background-color: var(--bg-green);
@@ -203,19 +230,19 @@
     width: 50%;
     align-content: center;
     text-align: center;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     padding: 10px;
     height: 275px;
     background-color: var(--bg-green);
   }
   .footer_large_box {
-    border: 1px dotted white;
+    /* border: 1px dotted white; */
     background-color: #ef8080;
     height: 170px;
   }
   .footer_strict_box {
     background-color: #20b1aa;
-    border: 1px dotted white;
+    /* border: 1px dotted white; */
     height: 170px;
   }
   /* --END--FOOTER---- */
