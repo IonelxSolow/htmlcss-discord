@@ -1,0 +1,249 @@
+:root {
+    --bg-nav-header-col: #3161e0;
+    --bg-white-color: white;
+    --bg-light-grey: #d3d3d3;
+    --bg-light-blue: #1d90ff;
+    --bg-light-pink: #ffbfcb;
+    --bg-green: #238b21;
+    --bg-tuchesing: #20b1aa;
+    --dark-not-black: #23272a;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .text_color_white{
+    color: white;
+  }
+  .debug {
+    background-color: antiquewhite;
+    border: 1px dotted;
+  }
+  
+  .d-flex{
+    display: flex;
+  }
+
+  .container {
+  /*   margin: auto;
+    max-width: 80%; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  /* ------HEADER------ */
+  #navbar {
+    background-color: var(--bg-nav-header-col);
+    flex-wrap: nowrap;
+    padding: 1.5rem 20rem;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    a {
+        color: white;
+      padding: 10px 5px;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+  /*     background-color: brown; */
+    }
+  }
+  .logo,
+  .nav_links,
+  .login_button {
+    display: flex;
+   /*  border: 1px dotted black; */
+    padding: 10px 5px;
+  }
+ /*  .bottone_accedi{
+    border: none;
+    padding: 5px;
+    border-radius: 20px; 
+  }*/
+  button{
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .button_open_discor_brows{
+    background-color: var(--dark-not-black);
+  }
+  .down_open_disc{
+    justify-content: space-evenly;
+
+  }
+  .logo {
+    order: 1;
+    flex-grow: 1;
+  }
+  .nav_links {
+    order: 2;
+    flex-grow: 2;
+    justify-content: center;
+  }
+  .login_button {
+    order: 3;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  /* --END----HEADER------ */
+  /* ----JUMBOTRON------ */
+  #jumbotron {
+    background-image: url('./assets/img/jumbo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-color: var(--bg-nav-header-col);
+    height: 240px;
+    
+  }
+  .jumbotron_box {
+    width: 50%;
+    align-content: center;
+    text-align: center;
+  /*   border: 1px dotted black; */
+    padding: 10px;
+ /*    height: 190px; */
+  /*   background-color: #ee81ee; */
+  }
+  /* --END----JUMBOTRON------ */
+  /* ----INVITE_ONLY----*/
+  #invite_only {
+    display: flex;
+    padding: 20px 170px;
+  
+    background-color: var(--bg-white-color);
+    height: 285px;
+  }
+  .invite_only_large_box {
+    width: 50%;
+    align-content: center;
+    text-align: center;
+  /*   border: 1px dotted black; */
+    order: 1;
+    flex-grow: 2;
+    background-color: var(--bg-light-blue);
+    height: 235px;
+  }
+  .invite_only_strict_box {
+    width: 30%;
+    align-content: center;
+    text-align: center;
+    /* border: 1px dotted black; */
+    order: 2;
+    flex-grow: 1;
+    background-color: var(--bg-light-pink);
+    height: 235px;
+  }
+  /* --END--INVITE_ONLY----*/
+  /* ----COMMUNITY----- */
+  #community {
+    display: flex;
+    padding: 20px 170px;
+  
+    background-color: var(--bg-light-grey);
+    height: 285px;
+  }
+  .community_large_box {
+    width: 50%;
+    align-content: center;
+    text-align: center;
+ /*    border: 1px dotted black; */
+    order: 2;
+    flex-grow: 2;
+    background-color: var(--bg-light-blue);
+    height: 235px;
+  }
+  .community_strict_box {
+    width: 30%;
+    align-content: center;
+    text-align: center;
+    /* border: 1px dotted black; */
+    order: 1;
+    flex-grow: 1;
+    background-color: var(--bg-light-pink);
+    height: 235px;
+  }
+  /* --END--COMMUNITY----- */
+  /* ----FANDOM---- */
+  #fandom {
+    display: flex;
+    padding: 20px 170px;
+  
+    background-color: var(--bg-white-color);
+    height: 285px;
+  }
+  .fandom_large_box {
+    width: 50%;
+    align-content: center;
+    text-align: center;
+   /*  border: 1px dotted black; */
+    order: 1;
+    flex-grow: 2;
+    background-color: var(--bg-light-blue);
+    height: 235px;
+  }
+  .fandom_strict_box {
+    width: 30%;
+    align-content: center;
+    text-align: center;
+    /* border: 1px dotted black; */
+    order: 2;
+    flex-grow: 1;
+    background-color: var(--bg-light-pink);
+    height: 235px;
+  }
+  /* --END--FANDOM---- */
+  /* ---TECNOLOGY---- */
+  #tecnology {
+    display: flex;
+    background-color: var(--bg-light-grey);
+    height: 470px;
+  }
+  .tecnology_box {
+    width: 50%;
+    align-content: center;
+    text-align: center;
+    /* border: 1px dotted black; */
+    padding: 10px;
+    height: 425px;
+    background-color: var(--bg-green);
+  }
+  /* --END---TECNOLOGY---- */
+  /* ----FOOTER---- */
+  #footer {
+    display: flex;
+    background-color: var(--dark-not-black);
+    height: 300px;
+    /*   padding: ; */
+  }
+  .footer_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    align-content: center;
+    text-align: center;
+    /* border: 1px dotted black; */
+    padding: 10px;
+    height: 275px;
+    background-color: var(--bg-green);
+  }
+  .footer_large_box {
+    /* border: 1px dotted white; */
+    background-color: #ef8080;
+    height: 170px;
+  }
+  .footer_strict_box {
+    background-color: #20b1aa;
+    /* border: 1px dotted white; */
+    height: 170px;
+  }
+  /* --END--FOOTER---- */
+  
